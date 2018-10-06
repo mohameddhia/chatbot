@@ -1,0 +1,58 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+      <pattern>INSTALL *</pattern>
+      <template>
+           <random>
+             <li>Sure thing! </li>
+             <li>Right away, sir! </li>
+             <li>On it! </li>
+          </random>
+          <system> sudo pacman -S  <star/></system>
+      </template>
+  </category>
+  <pattern>UPDATE SYSTEM</pattern>
+  <template>
+       <random>
+         <li>Sure thing! </li>
+         <li>Right away, sir! </li>
+         <li>On it! </li>
+      </random>
+      <system> sudo pacman -Syu</system>
+  </template>
+</category>
+
+  <category>
+      <pattern>INSTALL OPTIONS *</pattern>
+      <template>
+           <random>
+             <li>Sure thing! </li>
+             <li>Right away, sir! </li>
+             <li>On it! </li>
+          </random>
+          <system> yaourt  <star/></system>
+      </template>
+  </category>
+
+  <pattern>REMOVE *</pattern>
+  <template>
+       <random>
+         <li>Sure thing! </li>
+         <li>Right away, sir! </li>
+         <li>On it! </li>
+      </random>
+      <system> sudo pacman -R  <star/></system>
+  </template>
+</category>
+
+<pattern>INSTALL LOCAL *</pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo pacman -U  <star/></system>
+</template>
+</category>
+
+</aiml>

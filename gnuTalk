@@ -1,0 +1,34 @@
+#!/bin/sh
+do_start_text()
+{
+    cd ~/3A18/GnuSpeak/
+    python script.py
+}
+do_start_voice()
+{
+  cd ~/3A18/GnuSpeak
+  python script.py --voice
+}
+do_start_voice_text()
+{
+  cd ~/3A18/GnuSpeak
+  python script.py --voice --gtts
+}
+case $1 in
+text)
+  do_start_text
+;;
+voice)
+  do_start_voice
+;;
+voice-text)
+  do_start_voice_text
+;;
+help)
+echo"!!!!!!!!!!text for text to speech!!!!!!!!!!\n!!!!!!!!!!!!voice for speech reco (need internet)!!!!!!!!!!!! voice-text for 
+gTTS!!!!!!!!!!!! "
+;;
+*)
+echo "!!!!!!!!!type help it may helps you!!!!!!!!!!"
+;;
+esac

@@ -1,0 +1,15 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+      <pattern>DISPLAY</pattern>
+      <template>
+           <random>
+             <li>Sure thing! </li>
+             <li>Right away, sir! </li>
+             <li>On it! </li>
+          </random>
+          <system>ls</system>
+      </template>
+  </category>
+  
+
+</aiml>
