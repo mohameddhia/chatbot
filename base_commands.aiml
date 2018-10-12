@@ -1,6 +1,6 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <category>
-      <pattern>DISPLAY</pattern>
+      <pattern>DISPLAY </pattern>
       <template>
            <random>
              <li>Sure thing! </li>
@@ -14,14 +14,14 @@
   <category>
       <pattern>* DISPLAY</pattern>
       <template>
-            <srai>DISPLAY<star/></srai>
+        <system>ls | grep <star/></system>
       </template>
   </category>
 
   <category>
     <pattern>DISPLAY *</pattern>
     <template>
-      <srai>DISPLAY<star/></srai>
+      <system>ls | grep <star/></system>
     </template>
   </category>
 
@@ -40,14 +40,14 @@
   <category>
     <pattern>DISPLAY LIST *</pattern>
     <template>
-      <srai>DISPLAY LIST<star/></srai>
+      <system>ls -l<star/></system>
     </template>
   </category>
 
   <category>
     <pattern>* DISPLAY LIST</pattern>
     <template>
-      <srai>DISPLAY LIST<star/></srai>
+      <system>ls -l<star/></system>
     </template>
   </category>
 
@@ -66,17 +66,40 @@
   <category>
     <pattern>DISPLAY ALL *</pattern>
     <template>
-      <srai>DISPLAY ALL<star/></srai>
+      <system>ls -a<star/></system>
     </template>
   </category>
 
   <category>
     <pattern>* DISPLAY ALL</pattern>
     <template>
-      <srai>DISPLAY ALL<star/></srai>
+      <system>ls -a<star/></system>
     </template>
   </category>
 
+  <category>
+    <pattern>CHANGE USER</pattern>
+    <template>
+         <random>
+           <li>Sure thing! </li>
+           <li>Right away, sir! </li>
+           <li>On it! </li>
+        </random>
+        <system>su</system>
+    </template>
+  </category>
 
+  <category>
+    <pattern>* CHANGE USER</pattern>
+    <template>
+      <system>su<star/></system>
+    </template>
+  </category>
 
+  <category>
+    <pattern>CHANGE USER *</pattern>
+    <template>
+      <system>su<star/></system>
+    </template>
+  </category>
 </aiml>
