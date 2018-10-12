@@ -10,6 +10,73 @@
           <system>ls</system>
       </template>
   </category>
-  
+
+  <category>
+      <pattern>* DISPLAY</pattern>
+      <template>
+            <srai>DISPLAY<star/></srai>
+      </template>
+  </category>
+
+  <category>
+    <pattern>DISPLAY *</pattern>
+    <template>
+      <srai>DISPLAY<star/></srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DISPLAY LIST</pattern>
+    <template>
+         <random>
+           <li>Sure thing! </li>
+           <li>Right away, sir! </li>
+           <li>On it! </li>
+        </random>
+        <system>ls -l</system>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DISPLAY LIST *</pattern>
+    <template>
+      <srai>DISPLAY LIST<star/></srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* DISPLAY LIST</pattern>
+    <template>
+      <srai>DISPLAY LIST<star/></srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DISPLAY ALL</pattern>
+    <template>
+         <random>
+           <li>Sure thing! </li>
+           <li>Right away, sir! </li>
+           <li>On it! </li>
+        </random>
+        <system>ls -a</system>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DISPLAY ALL *</pattern>
+    <template>
+      <srai>DISPLAY ALL<star/></srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* DISPLAY ALL</pattern>
+    <template>
+      <srai>DISPLAY ALL<star/></srai>
+    </template>
+  </category>
+
+
 
 </aiml>

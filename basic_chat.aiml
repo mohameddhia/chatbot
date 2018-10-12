@@ -139,21 +139,21 @@ JARVIS
     <category>
         <pattern>WHAT DOES GNU STAND FOR</pattern>
         <template>
-            JARVIS stands for Just A Rather Very Intelligent System
+          Gnu is a mouvement wich encourage people to use free software
         </template>
     </category>
 
     <category>
-        <pattern>WHO IS IRON MAN</pattern>
+        <pattern>WHO IS RICHARD STALLMAN</pattern>
         <template>
-            Iron man is the one who created me.
+          RICHARD STALLMAN is the founder of GNU mouvement
         </template>
     </category>
 
     <category>
-        <pattern>WHO IS THE REAL IRON MAN</pattern>
+        <pattern>WHAT  IS GNU LINUX</pattern>
         <template>
-            The real Iron Man is Tony Stark.
+          GNU LINUX is a combination between linus torvalds kernel and RICHARD architecture
         </template>
     </category>
 
