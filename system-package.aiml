@@ -11,6 +11,7 @@
       </template>
   </category>
   <category>
+  <pattern>ARCH UPDATE SYSTEM</pattern>
   <pattern>UPDATE SYSTEM</pattern>
   <template>
        <random>
@@ -23,6 +24,7 @@
 </category>
 
   <category>
+      <pattern>ARCH INSTALL OPTIONS *</pattern>
       <pattern>INSTALL OPTIONS *</pattern>
       <template>
            <random>
@@ -34,6 +36,7 @@
       </template>
   </category>
   <category>
+  <pattern>ARCH REMOVE *</pattern>
   <pattern>REMOVE *</pattern>
   <template>
        <random>
@@ -44,6 +47,9 @@
       <system> sudo pacman -R  <star/></system>
   </template>
 </category>
+
+<category>
+<pattern>ARCH INSTALL LOCAL *</pattern>
 <category>
 <pattern>INSTALL LOCAL *</pattern>
 <template>
@@ -53,6 +59,68 @@
        <li>On it! </li>
     </random>
     <system> sudo pacman -U  <star/></system>
+</template>
+</category>
+
+<category>
+<pattern>DEB REMOVE PROGRAM * </pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo apt remove<star/></system>
+</template>
+</category>
+
+
+<category>
+<pattern>DEB SYSTEM UPGRADE </pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo apt upgrade<star/></system>
+</template>
+</category>
+
+
+<category>
+<pattern>DEB SYSTEM UPDATE </pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo apt update<star/></system>
+</template>
+</category>
+
+<category>
+<pattern>DEB INSTALL  *</pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo apt install<star/></system>
+</template>
+</category>
+
+<category>
+<pattern>DEB INSTALL LOCAL *</pattern>
+<template>
+     <random>
+       <li>Sure thing! </li>
+       <li>Right away, sir! </li>
+       <li>On it! </li>
+    </random>
+    <system> sudo dpkg -i  <star/></system>
 </template>
 </category>
 
